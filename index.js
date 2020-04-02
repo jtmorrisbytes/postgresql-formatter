@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-
+// CREDITS: https://gist.github.com/lovasoa/8691344#gistcomment-2631947
 function walk(dir) {
   return new Promise((resolve, reject) => {
     fs.readdir(dir, (error, files) => {
@@ -34,6 +34,7 @@ function walk(dir) {
     });
   });
 }
+// my code starts here;
 let replaceList = [
   "create",
   "or",
